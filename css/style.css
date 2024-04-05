@@ -11,7 +11,6 @@ html {
 body {
   color: #000;
   font-family: 'Comfortaa', sans-serif;
-  /* font-family: 'Yeseva One', serif; */
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -25,6 +24,13 @@ a {
 
 ul {
   list-style: none;
+}
+
+button {
+  border: none;
+  padding: 0;
+  border-radius: 0;
+  cursor: pointer;
 }
 
 .container {
@@ -52,7 +58,7 @@ ul {
   width: 100%;
 }
 
-header {
+.header {
   background-color: #fff8f3;
 }
 
@@ -86,6 +92,49 @@ header {
   top: -3px;
 }
 
+.main {
+  background-color: #fff8f3;
+  overflow-x: clip;
+}
+
+.top {
+  padding-top: 40px;
+  padding-bottom: 150px;
+}
+
+.top__inner {
+  position: relative;
+}
+
+.top__content {
+  width: 370px;
+  padding: 150px 0 250px;
+}
+
+.top__title {
+  font-size: 30px;
+  font-family: 'Yeseva One', serif;
+  margin-bottom: 15px;
+}
+
+.top__text {
+  margin-bottom: 48px;
+}
+
+.top__buy {
+  padding: 18px 54px;
+  background: #ffbd59;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.top__img {
+  position: absolute;
+  top: 0;
+  left: 240px;
+}
+
 .footer {
   padding-top: 40px;
   padding-bottom: 35px;
@@ -117,6 +166,23 @@ header {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .top__content {
+    width: 333px;
+    padding: 95px 0 70px;
+  }
+
+  .top__text {
+    margin-bottom: 30px;
+  }
+
+  .top__img {
+    left: 300px;
+  }
+
+  .top__img-large {
+    width: 655px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -146,6 +212,24 @@ header {
     left: -16px;
     top: -2px;
     background-size: cover;
+  }
+
+  .top__content {
+    width: 230px;
+  }
+
+  .top__title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .top__text {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+
+  .top__img {
+    left: 180px;
   }
 }
 
@@ -199,5 +283,60 @@ header {
   .footer {
     padding: 50px 0;
     font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top {
+    padding: 30px 0 50px;
+  }
+
+  .top__content {
+    width: 180px;
+  }
+
+  .top__title {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+
+  .top__text {
+    font-size: 8px;
+    margin-bottom: 15px;
+  }
+
+  .top__buy {
+    font-size: 10px;
+    padding: 14px 41px;
+  }
+
+  .top__img-large {
+    width: 309px;
+  }
+}
+
+@media (max-width: 360px) {
+  .top__content {
+    position: relative;
+    width: 200px;
+    padding: 20px 0 0;
+    z-index: 2;
+  }
+
+  .top__title {
+    font-size: 18px;
+  }
+
+  .top__text {
+    font-size: 10px;
+  }
+
+  .top__img {
+    left: auto;
+    right: 0;
+  }
+
+  .top__img-large {
+    width: 185px;
   }
 }
