@@ -482,6 +482,60 @@ button {
   bottom: 50px !important;
 }
 
+.questions {
+}
+
+.accordion {
+}
+
+.accordion__item {
+  background-color: #fafafa;
+  margin-bottom: 10px;
+}
+
+.accordion__title {
+  display: block;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  font-family: 'Yeseva One', serif;
+  font-size: 16px;
+  display: block;
+  background-color: transparent;
+  padding: 16px 50px 16px 13px;
+}
+
+.accordion__title::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/arrow-down.svg);
+  width: 16px;
+  height: 16px;
+  right: 26px;
+  top: 17px;
+}
+
+.accordion__title.accordion__title--active::after {
+  transform: rotate(180deg);
+}
+
+.accordion__text {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.3s, max-height 0.3s;
+}
+
+.accordion__text ol {
+  padding: 20px 40px;
+}
+.accordion__text ol li {
+  margin-bottom: 10px;
+}
+
+.accordion__text.accordion__text--visible {
+  opacity: 1;
+}
+
 .promo {
   background-image: url(../images/promo.jpg);
   background-repeat: no-repeat;
@@ -730,6 +784,10 @@ button {
 
   .certificates__title {
     font-size: 28px;
+  }
+
+  .questions__title {
+    font-size: 30px;
   }
 
   .footer__inner {
